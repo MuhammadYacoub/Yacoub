@@ -1,32 +1,364 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Your App Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> قضايا الدولة | Egypt Litigation Authority</title>
+    <meta name="description" content="قضايا الدولة هي هيئة قضائية مستقلة مصرية تتولى حماية المال العام ومصالح الدولة في الدعاوى المدنية والإدارية والدولية.">
+    <meta name="keywords" content="هيئة,قضايا,الدولة,مصر,الحكومة وزارة,العدل">
+    <link href="images/favicon_io/favicon-16x16.png" rel="icon" type="image/x-icon">
     <meta name="author" content="Muhammad Yacoub">
+    <meta name="robots" content="index, follow">
 
-    <!-- Latest compiled and minified Bootstrap CSS -->
+    <!-- openGraph & Twitter cards-->
+    <meta property="og:title" content="قضايا الدولة | State Litigation Authority">
+    <meta property="og:description" content="الموقع الرسمي لهيئة قضايا الدولة | The official site of the Egyptian Litigation Authority">
+    <meta property="og:image" content="https://img.youm7.com/ArticleImgs/2023/6/20/87571-%D9%85%D8%A8%D9%86%D9%89-%D9%87%D9%8A%D8%A6%D8%A9-%D9%82%D8%B6%D8%A7%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9.jfif">
+    <meta property="og:url" content="http://sla.gov.eg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="قضايا الدولة | State Litigation">
+    <meta name="twitter:description" content="الموقع الرسمي لهيئة قضايا الدولة | The official site fot Egyptian Litigation Authority">
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/ar/1/1e/%D8%B4%D8%B9%D8%A7%D8%B1_%D9%82%D8%B6%D8%A7%D9%8A%D8%A7_%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9.jpg">
+
+<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPFFBHVV');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Add Google Fonts (Alexandria) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alexandria" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Add Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Add Custom CSS to apply Alexandria font -->
+    <style>
+        body, p, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Alexandria', sans-serif;
+        }
+    </style>
+    <!-- images transformation  -->
+    <style>
+        .square-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 100%; /* 1:1 aspect ratio (square) */
+        }
+
+        .square-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */
+        }
+
+        .navbar-collapse {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        /* News bar animation effect */
+                    .ticker-wrap {
+            position: relative;
+            overflow: hidden;
+            height: 40px;
+            }
+
+            .ticker-move {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translate3d(0, 0, 0);
+            animation: ticker 15s linear infinite;
+            }
+
+            .ticker-item {
+            display: inline-block;
+            margin-right: 30px;
+            white-space: nowrap;
+            font-size: 20px;
+            color: #333;
+            }
+
+            @keyframes ticker {
+            0% {
+                transform: translate3d(0, 0, 100%);
+            }
+            100% {
+                transform: translate3d(100%, 0, 0);
+            }
+            }
 
 
-    <title>Your App Title</title>
+    </style>
+
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <!-- Your content goes here -->
-                <h1 class="text-center">مرحبًا بك في تطبيقك!</h1>
-                <p class="text-center">هذا هو مكانك لتطوير واختبار مهارات البرمجة وقاعدة البيانات.</p>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPFFBHVV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+    <!-- Header with Image -->
+    <header>
+        <img src="images/headerold.jpg" alt="Header Image" class="img-fluid w-100 d-md-block d-none">
+        <img src="images/header1.png" alt="Header Image" class="img-fluid w-100 d-block d-md-none">
+    </header>
+
+    <!-- Search Box and Main Menu -->
+    <div class="" style="background-color: #e6edf0; width: 100%;"  >
+        <div class="container mt-3 ">
+        <div class="row" >
+            <div class="col-md-9">
+                <!-- Main Menu -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">الرئيسية</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="UC.html">أخبار الهيئة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="UC.html">عن الهيئة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="UC.html">الإنضمام للهيئة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="UC.html">التواصل</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
+            <!-- Move the <span> element outside the <nav> and <div> -->
+            <div class="col-md-3 " style="padding: 1%;">
+                <a href="http://sla.gov.eg" class="btn btn-primary btn-danger">نسخة تجريبية | للرجوع للموقع القديم</a>
+            </div>
+        </div>    
         </div>
     </div>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ticker-wrap">
+              <div class="ticker-move">
+                <div class="ticker-item text-danger">
+                    <p class="fs-6">
+                    عاجل | دشنت قضايا الدولة عدة افرع جديدة .
+                    </p>
+                </div>
+                <div class="ticker-item text-danger ">
+                    <p class="fs-6">   
+                        عاجل | تعلن قضايا الدولة عن اصدار جديد من المجلة القضائية.
+                    </p>
+                </div>
 
-    <!-- Latest compiled and minified Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+            
+
+            
+            <!-- <div class="col-md-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="ابحث هنا" aria-label="ابحث هنا" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">بحث</button>
+                    </div>
+                </div>
+            </div> -->
+       
+
+<!-- slider  -->
+<div class="card container-md">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/0.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h3>رئيس هيئة قضايا الدولة</h3>
+                <p>حلف اليمين لمعالى المستشار رئيس قضايا الدولة </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>إجتماع السيد رئيس الجمهورية</h5>
+                <p>إجتماع السيد الرئيس عبد الفتاح السيسي بالمستشار مسعد عبد المقصود بعد حلف اليمين</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>إحتفالية قضايا الدولة </h5>
+                <p>إحتفالية قضايا الدولة بالذكرى الخمسين لانتصارات حرب اكتوبر المحيدة</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+</div>
+<!-- slider end  -->
+
+<!-- Card  -->
+    <div  class="card text-center container-md ">
+        <div class="card-header"></div>
+            <div class="card-body " style="background-image: url(images/Background.jpg); background-size: 100% 100%; ">
+                <h3 class="card-title">التقدم لوظيفة مندوب مساعد</h3> <br>
+                <p class="card-text"> تعلن هيئة قضايا الدولة عن قبول طلبات التعين في وظيفة مندوب مساعد من خريجي كليات الحقوق والشريعة والقانون والشرطة دفعة 2023 <br> <a href="images/2022.jpg" class="btn-link" target="_blank" >شاهد الإعلان </a> </p><br> 
+                <div class="d-grid gap-2 col-3 mx-auto ">
+                    <a href="http://sla.gov.eg/LoginForm.aspx" class="btn btn-primary">التسجيل</a>
+                    <a href="https://onedrive.live.com/embed?resid=66CCB456248A1496%21355700&amp;authkey=!AE5ejwRV69UfUAs" target="_blank" class="btn btn-outline-primary btn-sm">شرح خطوات التسجيل</a>
+                </div>
+            </div>
+        <div class="card-footer text-body-secondary"></div>
+    </div>
+
+
+<!-- iframe -->
+<div class="card container mt-3 text-center ">
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/b6oFVLKjJOU?si=VTPtLukXQcZj9nid" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+
+<!-- News Section -->
+<div class="container mt-3">
+    <div class="row">
+        <!-- Carousel -->
+       
+        <!-- News Cards -->
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="card mb-3">
+                        <div class="square-image-wrapper">
+                            <img src="templates/images/2-11-2023.jpg" class="card-img-top square-image" alt="News 2 Image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">إستدراك</h5>
+                            <p class="card-text">السادة المندوبون المساعدون المعينون بالقرار الجمهوري رقم 434 لسنة 2023</p>
+                            <a href="images/2-11-2023.jpg" target="_blank" class="btn btn-primary">
+                                للإطلاع
+                            </a>
+                        </div>
+                    </div>
+                                       
+                </div>                
+                
+                <div class="col-md-3 col-6">
+                    <div class="card mb-3">
+                        <div class="square-image-wrapper">
+                            <img src="images/31-10-2023.jpg" class="card-img-top square-image" alt="News 2 Image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">إعلان هام</h5>
+                            <p class="card-text">المعينون بالقرار الجمهوري رقم 434 لسنة 2023 دفعة التظلمات 2013و2014 </p>
+                            <a href="images/31-10-2023.jpg" target="_blank" class="btn btn-primary">
+                                للإطلاع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-6">
+                    <div class="card mb-3">
+                        <div class="square-image-wrapper">
+                            <img src="images/19-10-2023.jpg" class="card-img-top square-image" alt="News 2 Image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">تنويه هام </h5>
+                            <p class="card-text">خاص بدفعة التظلمات 2013و2014 </p>
+                            <a href="images/19-10-2023.jpg" target="_blank" class="btn btn-primary">
+                                للإطلاع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card mb-3">
+                        <div class="square-image-wrapper">
+                            <img src="images/2022.jpg" class="card-img-top square-image" alt="News 2 Image">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">اعلان قبول طلبات التعين</h5>
+                            <p class="card-text">تعلن هيئة قضايا الدولة عن قبول طلبات التعين في وظيفة مندوب مساعد من خريجي كليات الحقوق والشريعة والقانون والشرطة دفعة  </p>
+                            <a href="images/2022.jpg" target="_blank" class="btn btn-primary">
+                                للإطلاع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+</div>
+
+<!-- footer  -->
+    <div class="card " style="height: fit-content; width:100% ; background-color: #e6edf0; " >
+        <div class="row g-0">
+          <div class="col-md-4 card " style="padding: 1%;" >
+                <iframe width="auto" height="100%"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.4261419064705!2d31.20361481321412!3d30.053317205246564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458413694faee35%3A0xe2d1df2ac8f4a13e!2z2YfZitim2Kkg2YLYttin2YrYpyDYp9mE2K_ZiNmE2Kkg2KfZhNmF2YLYsSDYp9mE2LHYptmK2LPZig!5e0!3m2!1sar!2seg!4v1699273451734!5m2!1sar!2seg" style="border: 2px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">  يمكنكم التواصل عبر موقعنا الالكتروني او البريد الالكتروني للرد علي كافة الاستفسارات  </h5>
+                <p class="card-text">              
+                  <br>
+                  العنوان:42 شارع جامعة الدول العربية, المهندسين
+                  <br>
+                  رقم الهاتف:0237617046 - 0237617082
+                  <br>
+                  فاكس:0237621417
+                  <br>
+                  رقم اخر:0237617049 - 0237617096
+                  <br>
+                  البريد الالكتروني:info@sla.gov.eg </p>
+                <a href="https://maps.app.goo.gl/kAwmYrTr9e1NUSLc6" class="btn btn-primary">الخريطة</a>
+                    
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Bootstrap JS (including Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
